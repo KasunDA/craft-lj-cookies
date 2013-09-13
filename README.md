@@ -1,4 +1,4 @@
-### LJ Cookies for Craft CMS
+### LJ Cookies plugin for Craft CMS
 
 A simple plugin for setting and retrieving cookies from within [Craft CMS](http://buildwithcraft.com) templates.
 
