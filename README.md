@@ -26,9 +26,12 @@ More info: (http://php.net/manual/en/function.setcookie.php)
 
     {{ craft.lj_cookies.set('myname', 'myvalue', now | date_modify("+30 days").timestamp ) }}
     {# Sets a cookie to expire in 30 days. #}
+	
+    {{ craft.lj_cookies.set('myname', 'myvalue', '', '/' ) }}
+    {# Cookie available for entire domain. #}
 
-    {{ craft.lj_cookies.set('myname', 'myvalue', now | date_modify("+30 days").timestamp, '/foo/' ) }}
-    {# Cookie available within /foo/ directory and sub-directories. Defaults to current directory. #}
+    {{ craft.lj_cookies.set('myname', 'myvalue', '', '/foo/' ) }}
+    {# Cookie available within /foo/ directory and sub-directories. #}
 
 ###Retrieving cookies###
 
@@ -37,7 +40,7 @@ More info: (http://php.net/manual/en/function.setcookie.php)
 
 **Example**
 
-    {{ craft.lj_cookies.set('user', 'Lewis') }}
+    {{ craft.lj_cookies.set('user', 'Lewis', '', '/') }}
 	{# Set the cookie using 'set' #}
 
     <p>Howdy, {{ craft.lj_cookies.get('user') }}</p>
@@ -51,3 +54,5 @@ More info: (http://php.net/manual/en/function.setcookie.php)
 **Tested on**
 
 + Craft 1.1
++ Craft 1.2
++ Craft 1.3
