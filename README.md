@@ -53,6 +53,4 @@ More info: (http://php.net/manual/en/function.setcookie.php)
 
 **Tested on**
 
-+ Craft 1.1
-+ Craft 1.2
-+ Craft 1.3
++ Craft 2.0 and below
