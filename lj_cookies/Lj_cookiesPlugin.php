@@ -20,6 +20,6 @@ class Lj_cookiesPlugin extends BasePlugin
 
     function getDeveloperUrl()
     {
-        return 'http://lewisjenkins.co.uk';
+        return 'https://github.com/lewisjenkins/craft-lj-cookies';
     }
 }
